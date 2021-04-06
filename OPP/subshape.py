@@ -4,7 +4,7 @@ Created on Tue Apr  6 17:33:54 2021
 
 @author: Simon
 """
-
+from shape import *
 
 class Circle(Shape):
     rayon=0
