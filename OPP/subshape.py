@@ -1,21 +1,11 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Tue Apr  6 17:33:54 2021
 
-class Shape:
-    center_x = 0
-    center_y = 0
-    color = (0, 0, 0)
-    def __init__(self, x, y, r, g, b):
-        self.center_x = x
-        self.center_y = y
-        self.color = (r, g, b)
-    
-    def get_center(self):
-        return self.center_point
-    def get_area():
-        return
-    def get_perimeter():
-        return
-    
+@author: Simon
+"""
+
+
 class Circle(Shape):
     rayon=0
     def __init__(self, x, y, r, g, b, rayon):
@@ -47,4 +37,3 @@ if __name__ == '__main__':
     print("The area of rect1 is :" + str(rect1.get_area()))
     print("The perimeter of circle1 is :" + str(circle1.get_perimeter()))
     print("The perimeter of rect1 is :" + str(rect1.get_perimeter()))
-    
