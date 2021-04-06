@@ -28,6 +28,20 @@ class Rect(Shape):
         return self.height * self.width
     def get_perimeter(self):
         return 2*(self.height + self.width)
+
+class Tri(Shape):
+    height = 0
+    base = 0
+    def __init__(self, x, y, r, g, b, h, w):
+        super(Tri,self).__init__(x, y, r, g, b)
+        self.height = h
+        self.base = w
+    def get_area(self):
+        return 0.5*self.height * self.base
+    def get_perimeter(self):
+        return self.height + self.base
+    
+
     
     
 if __name__ == '__main__':
