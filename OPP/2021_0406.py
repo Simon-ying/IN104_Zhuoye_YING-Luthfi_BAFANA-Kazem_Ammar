@@ -40,7 +40,7 @@ class Rect(Shape):
         return 2*(self.height + self.width)
     
     
-def __main__():
+if __name__ == '__main__':
     circle1 = Circle(1, 5, 0, 255, 255, 6)
     rect1 = Rect(5, 3, 255, 0, 255, 3, 4)
     print("The area of circle1 is :" + str(circle1.get_area()))
@@ -48,4 +48,3 @@ def __main__():
     print("The perimeter of circle1 is :" + str(circle1.get_perimeter()))
     print("The perimeter of rect1 is :" + str(rect1.get_perimeter()))
     
-__main__()
