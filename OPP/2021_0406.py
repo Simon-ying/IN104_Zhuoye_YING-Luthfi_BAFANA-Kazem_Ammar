@@ -22,9 +22,9 @@ class Circle(Shape):
         super(Circle,self).__init__(x, y, r, g, b)
         self.rayon = rayon
     def get_area(self):
-        return 3.14*self.r*self.r
+        return 3.14*self.rayon*self.rayon
     def get_perimeter(self):
-        return 2*3.14*self.r
+        return 2*3.14*self.rayon
 
 
 class Rect(Shape):
@@ -38,3 +38,14 @@ class Rect(Shape):
         return self.height * self.width
     def get_perimeter(self):
         return 2*(self.height + self.width)
+    
+    
+def __main__():
+    circle1 = Circle(1, 5, 0, 255, 255, 6)
+    rect1 = Rect(5, 3, 255, 0, 255, 3, 4)
+    print("The area of circle1 is :" + str(circle1.get_area()))
+    print("The area of rect1 is :" + str(rect1.get_area()))
+    print("The perimeter of circle1 is :" + str(circle1.get_perimeter()))
+    print("The perimeter of rect1 is :" + str(rect1.get_perimeter()))
+    
+__main__()
