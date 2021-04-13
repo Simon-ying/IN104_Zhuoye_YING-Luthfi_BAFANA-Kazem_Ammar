@@ -1,6 +1,6 @@
 import unittest
 
-from something import subshape.py
+import subshape
 
 class TestCircle(unittest.TestCase):
 
